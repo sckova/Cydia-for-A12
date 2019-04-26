@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9pv-A4-QxB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="Cydia2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="XJj-Ym-AkO">
+                                <rect key="frame" x="127" y="61" width="120" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Cydia 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tsI-83-hqn">
+                                <rect key="frame" x="105" y="189" width="239" height="75"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="for iOS 12.x" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dwp-hC-d1K">
+                                <rect key="frame" x="187" y="255" width="110" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="LTy-rr-LvK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suo-md-FJi">
+                                <rect key="frame" x="105" y="309" width="164" height="64"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="7gP-by-Pj9"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Install"/>
+                                <connections>
+                                    <segue destination="8rJ-Kc-sve" kind="show" id="nfd-3f-BXF">
+                                        <segue key="commit" inheritsFrom="parent" id="k52-26-Ido"/>
+                                        <segue key="preview" inheritsFrom="commit" id="sDf-3c-IQ3"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Supports A12!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DcO-xI-IJH">
+                                <rect key="frame" x="186" y="272" width="113" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="xTh-du-Khu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="4fX-d3-2cN"/>
+                            <constraint firstItem="Dwp-hC-d1K" firstAttribute="leading" secondItem="DcO-xI-IJH" secondAttribute="leading" constant="1" id="8T5-66-NTd"/>
+                            <constraint firstItem="Dwp-hC-d1K" firstAttribute="top" secondItem="XJj-Ym-AkO" secondAttribute="bottom" constant="66" id="9fI-HF-9xi"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="Suo-md-FJi" secondAttribute="bottom" constant="294" id="Cfs-b4-EwR"/>
+                            <constraint firstItem="DcO-xI-IJH" firstAttribute="top" secondItem="tsI-83-hqn" secondAttribute="bottom" constant="8" symbolic="YES" id="G12-Ud-MnM"/>
+                            <constraint firstItem="Suo-md-FJi" firstAttribute="top" secondItem="DcO-xI-IJH" secondAttribute="bottom" constant="18" id="GKZ-aB-kqV"/>
+                            <constraint firstItem="DcO-xI-IJH" firstAttribute="top" secondItem="Dwp-hC-d1K" secondAttribute="bottom" constant="1" id="HBF-Jh-S5h"/>
+                            <constraint firstItem="XJj-Ym-AkO" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="LfN-4L-cbJ"/>
+                            <constraint firstItem="tsI-83-hqn" firstAttribute="leading" secondItem="Suo-md-FJi" secondAttribute="leading" id="Lzk-EP-PIr"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="tsI-83-hqn" secondAttribute="trailing" constant="31" id="T2L-o5-1Ry"/>
+                            <constraint firstItem="Dwp-hC-d1K" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="187" id="TsF-8T-hZB"/>
+                            <constraint firstItem="XJj-Ym-AkO" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="41" id="Tx0-HY-eHa"/>
+                            <constraint firstItem="tsI-83-hqn" firstAttribute="centerX" secondItem="Dwp-hC-d1K" secondAttribute="centerX" constant="-17.5" id="VtG-6T-Rwd"/>
+                            <constraint firstItem="XJj-Ym-AkO" firstAttribute="centerX" secondItem="Suo-md-FJi" secondAttribute="centerX" id="Xde-OH-iEZ"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="aJ8-MV-AmK"/>
+                            <constraint firstItem="XJj-Ym-AkO" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="127" id="j0X-yN-kSg"/>
+                            <constraint firstItem="tsI-83-hqn" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="105" id="kez-6l-4Ma"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="DcO-xI-IJH" secondAttribute="trailing" constant="76" id="tqr-yY-9s7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="358.4707646176912"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Cydia2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eta son" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBs-jZ-x25">
+                                <rect key="frame" x="109" y="303" width="157" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nfd-3f-BXF"/>
+    </inferredMetricsTieBreakers>
+</document>
